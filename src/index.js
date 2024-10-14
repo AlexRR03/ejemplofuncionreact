@@ -1,13 +1,18 @@
 import React from 'react';
-import SumarNumeros from './components/SumarNumeros';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import SumarNumeros from './components/SumarNumeros';
+import PadreMatematicas from './components/PadreMatematicas';
+import SaludoPadre from './components/SaludoPadre';
+import Contador from './components/Contador';
+import Car from './components/Car';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SumarNumeros/>
+    <Car marca="Honda" modelo="civic" aceleracion="20" velocidadmax="220"></Car>
+    <Car marca="Citroen" modelo="Xsara" aceleracion="50" velocidadmax="320" ></Car>
   </React.StrictMode>
 );
 
